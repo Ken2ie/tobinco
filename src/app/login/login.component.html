@@ -1,0 +1,55 @@
+<div class="login">
+    <div class="login-container">
+       <!-- <img src="./assets/pharma1.jpg" alt=""> -->
+  
+       <!-- Login Box -->
+       <div class="login-box">
+  
+        <!-- Form -->
+        <form action="">
+          <!-- Logo -->
+          <div class="logo">
+            <img src="./assets/logo_xb.png" alt="">
+          </div>
+  
+          <!-- Sign In -->
+          <div class="sign-in">
+            <h2>Sign in to your account</h2>
+          </div>
+          <!-- Email -->
+          <div class="form email">
+            <input [(ngModel)]="email" id="email" type="email" required="required" name="email" focus="autofocus" >
+            <label [ngClass]="{ green : email != '' }" for="email" placeholder="E-mail"></label>
+          </div>
+          <!-- Password -->
+          <div class="form password">
+            <input [(ngModel)]="password" id="password" type="password" required="required" name="password" focus="autofocus">
+            <label [ngClass]="{green : password != ''}" for="password" placeholder="Password"></label>
+          </div>
+  
+          <!-- Remeber Me and forgot Password -->
+          <div class="remind-forgot">
+            <div class="reminder">
+              <input type="checkbox">
+              <label for="">Remember Me</label>
+            </div>
+            <div class="forgot">
+              <a [routerLink]="">Forgot Password?</a>
+            </div>
+          </div>
+  
+          <!-- Login Button -->
+  
+          <div class="login-button">
+            <button>Login</button>
+          </div>
+  
+          <!-- Download -->
+          <div class="download">
+            <span>Download Android App here</span> <a href="https://utils.mikebergafu.me/download">Download Now</a>
+          </div>
+  
+        </form>
+       </div>
+    </div>
+  </div>

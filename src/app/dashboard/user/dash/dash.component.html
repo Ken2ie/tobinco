@@ -1,0 +1,28 @@
+<div class="dash">
+    <div class="dash-container">
+        <h1>Dashboard</h1>
+        <div class="progressive">
+            <div class="progressive-container" *ngIf="progressions">
+                <div class="prog-card" *ngFor="let prog of progressions">
+                    <div class="details">
+                        <h2>{{prog.sessions}}</h2>
+                        <span id="count">{{prog.count}}</span>
+                        <span id="statts"><span id="{{prog.stats}}">{{prog.stats}}</span><label for="">{{prog.day}}</label></span>
+                    </div>
+                    <div class="fig">
+                        <span>view</span>
+                        <i class="{{prog.icon}}"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="progressive-barchart">
+                <div class="bar-container">
+                    <h2>Top Daily Medical Sessions by Medical Reps </h2>
+                    <div class="barchart">
+                        <figure id="bar"></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

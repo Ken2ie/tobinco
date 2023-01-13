@@ -1,0 +1,204 @@
+.login{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("src\assets\pharma1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover 20px;
+    background-position: center;
+}
+
+.login-container{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(248, 247, 216, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    padding: 15px 20px;
+}
+
+
+/* Logo */
+
+.login-box form .logo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.login-box form .logo img{
+    width: 100px;
+}
+
+/* Sign Notifier*/
+
+.sign-in{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.sign-in h2{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #4CAF50 ;
+}
+
+/* Email */
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.password{
+    margin-bottom: 20px;
+}
+
+.form input[type="email"], .form input[type="password"]{
+    width: 28.5rem;
+     height: 3rem;
+     font-size: 1rem;
+     border: 0;
+     border-bottom: 1px solid rgba(0, 0, 0, 0.122);
+     background-color: white;
+     outline: 0;
+     margin: 20px 0;
+     padding: 0 5px;
+}
+
+.form input[type="email"] + label, .form input[type="password"] + label{
+  margin-top: -3.4rem;
+  padding: 0 5px;
+  transition: 0.4s all ease;
+}
+
+.form input[type="email"] + label::before, .form input[type="password"] + label::before{
+    content: attr(placeholder);
+    font-size: 0.95rem;
+    font-weight: 450;
+    color: #727272;
+    transition: 0.4s all ease;
+}
+
+.form input[type="email"]:focus + label::before, .form input[type="password"]:focus + label::before{
+    color: #FF5252;
+    position: relative;
+    top: -27px;
+    right: 0px;
+    font-size: 0.8rem;
+    transition: 0.4s all ease-in-out;
+}
+
+
+
+
+/* Remember Me */
+
+.remind-forgot{
+    margin: 30px 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.remind-forgot .reminder, .forgot{
+    display: flex;
+}
+
+/* Active label */
+
+.green::before{
+    color: #FF5252;
+    position: relative;
+    top: -27px;
+    right: 0px;
+    font-size: 0.7rem;
+}
+
+
+/* Remember Me and Forgot Password */
+
+.reminder {
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* margin-bottom: -15px; */
+}
+
+.reminder label{
+    color: #818181;
+    margin: 0 10px;
+    font-size: 0.94rem;
+    font-weight: 500;
+}
+
+.reminder input[type='checkbox']{
+    height: 17px;
+    width: 17px;
+}
+
+
+.forgot a{
+    color: #FF5252;
+    font-weight: 700;
+    font-size: 0.94rem;
+}
+
+/* Login Button */
+
+.login-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 10px 0; */
+}
+
+.login-button button{
+    padding: 13px 165px;
+    border: 0;
+    background-color: #4CAF50;
+    font-size: 1rem;
+    font-weight: 550;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 2px;
+    margin-bottom: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.368);
+    outline: 0;
+    cursor: pointer;
+}
+
+
+.download{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.download span{
+    color: #8C949A;
+}
+
+.download a{
+    color: #FF5252;
+    margin: 0 10px;
+}
