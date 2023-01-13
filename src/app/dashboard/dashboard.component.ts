@@ -23,7 +23,7 @@ export class DashboardComponent {
   public postJsonValue : any;
 
   constructor(private http : HttpClient) {
-    console.log(environment.production); // Logs false for default environment
+    console.log(environment.production); // Debug for CORS Error
 
    }
 
